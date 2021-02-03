@@ -7,7 +7,10 @@ ________ ___       ________  ________  ________  ________          ___  ___  ___
    \ \__\   \ \_______\ \_______\ \__\    \ \__\    \ \__\ \__\       \ \__\ \__\ \_______\ \_______\
     \|__|    \|_______|\|_______|\|__|     \|__|     \|__|\|__|        \|__|\|__|\|_______|\|_______|
     Do not dump constants, or try to de-obfuscate anthing, or be blacklisted. 
-    (Thanks for PSU for the obfuscation, psu.dev. Please use their stuff.)
+    (Scripts obfuscated in AztupBrew, and in PSU.)
     ! IT IS RECCOMENDED YOU USE THE AUTO-LOADER, INSTEAD OF COPYING EACH SCRIPT.
 --]]
+
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/gmdetection",true))()
+
 
