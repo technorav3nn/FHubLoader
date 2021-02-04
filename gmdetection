@@ -3,12 +3,13 @@ local function ld(l)
 loadstring(game:HttpGet(l,true))()
 nouniversal=true
 
-if game.Placeid==4958040666 then
+if game.PlaceId==4958040666 then
 ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/SCLoader")
 end
 
-if game.Placeid==1188096566 then
+if game.PlaceId==1188096566 then
 ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ClubDJLoader")
+-- use individual club dj loader above pls.
 end
 
 if nouniversal==false then
