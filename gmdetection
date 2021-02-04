@@ -1,3 +1,4 @@
+--[[
 nouniversal=false
 local function ld(l)
 loadstring(game:HttpGet(l,true))()
@@ -7,15 +8,29 @@ if game.PlaceId==4958040666 then
 ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/SCLoader")
 end
 
-if game.PlaceId==1188096566 then
-ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ClubDJLoader")
--- use individual club dj loader above pls.
-end
 
 if nouniversal==false then
-warn("game not loaded, loading Owl Hub Universal FPS.")
-ld("https://raw.githubusercontent.com/SiLeNSwOrD/OwlHub/master/OwlHub.txt")
+warn("game not loaded, club dj or unifps")
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ElseLoader(nogm)")
 -- Im making my own universal FPS script soon, using oh's esp lib. -- 
 end
+--]] --saving this just incase
+
+nouniversal=false
+local function ld(l)
+loadstring(game:HttpGet(l,true))()
+nouniversal=true
+
+if game.PlaceId==4958040666 then
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/SCLoader")
+end
+
+end
+if nouniversal==false then
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ElseLoader(nogm)")
+-- Im making my own universal FPS script soon, using oh's esp lib. -- 
+end
+
+
 
 
