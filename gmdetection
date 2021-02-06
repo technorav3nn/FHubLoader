@@ -14,7 +14,7 @@ warn("game not loaded, club dj or unifps")
 ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ElseLoader(nogm)")
 -- Im making my own universal FPS script soon, using oh's esp lib. -- 
 end
---]] --saving this just incase
+ --saving this just incase
 
 nouniversal=false
 local function ld(l)
@@ -30,7 +30,40 @@ if nouniversal==false then
 ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ElseLoader(nogm)")
 -- Im making my own universal FPS script soon, using oh's esp lib. -- 
 end
+also saving this above /\
+                        |
+--]] 
+--[[
+nouniversal=false
+local function ld(l)
+loadstring(game:HttpGet(l,true))()
+nouniversal=true
 
+if game.PlaceId==4958040666 then
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/SCLoader")
+end
+
+
+if nouniversal==false then
+warn("game not loaded, club dj or unifps")
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ElseLoader(nogm)")
+-- Im making my own universal FPS script soon, using oh's esp lib. -- 
+end
+--]] --saving this just incase
+
+
+local function ld(l)
+loadstring(game:HttpGet(l,true))()
+end
+
+
+if game.PlaceId==4958040666 then
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/SCLoader")
+else if game.PlaceId~=4958040666 then
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ElseLoader(nogm)")
+-- Im making my own universal FPS script soon, using oh's esp lib. -- 
+end
+end
 
 
 
