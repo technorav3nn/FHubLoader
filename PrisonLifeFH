@@ -1,0 +1,85 @@
+-- made by me lol
+
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+
+local UI = Material.Load({
+	Title = "Getting Started",
+	Style = 1,
+	SizeX = 350,
+	SizeY = 390,
+	Theme = "Dark"
+})
+
+
+local Page = UI.New({
+	Title = "Local Player"
+})
+
+Page.Button({
+	Text = "Noclip GUI By Death_Blows#0001",
+	Callback = function()
+		Gui = Instance.new("ScreenGui", game.CoreGui)
+		Button = Instance.new("TextButton", Gui)
+		Button.Size = UDim2.new(0, 100, 0, 40)
+		Button.BackgroundTransparency = 0
+		Button.Position = UDim2.new(0.003, 0, 0.93, 0)
+		Button.Text = "Enable Noclip (gui by Death_Blows#0001)"
+		Button.TextColor3 = Color3.new(0, 25, 215)
+		noclip = false
+		Button.TextWrapped = true
+		game:GetService('RunService').Stepped:connect(function()
+			if noclip then
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+			end
+		end)
+		Button.MouseButton1Down:connect(function()
+			noclip = not noclip
+			if Button.Text == "Enable Noclip" then
+				Button.Text = "Disable Noclip"
+			else
+				Button.Text = "Enable Noclip"
+			end
+		end)
+	end
+})
+
+-- Note: This is just a snippet
+Page.Slider({
+	Text = "Walkspeed",
+	Callback = function(value)
+		game.Players.LocalPlayer.Character.Humanoid.Walkspeed = value
+	end,
+	Min = 16,
+	Max = 200,
+	Def = 16
+})
+
+Page.Slider({
+	Text = "JumpPower",
+	Callback = function(value)
+		game.Players.LocalPlayer.Character.Humanoid.JumpPower = value
+	end,
+	Min = 50,
+	Max = 200,
+	Def = 50
+})
+
+Page.Button({
+	Text = "Get All Guns",
+	Callback = function()
+	Workspace.Remote.ItemHandler:InvokeServer(Workspace.Prison_ITEMS.giver["M4A1"].ITEMPICKUP)
+	Workspace.Remote.ItemHandler:InvokeServer(Workspace.Prison_ITEMS.giver["AK-47"].ITEMPICKUP)
+	Workspace.Remote.ItemHandler:InvokeServer(Workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+	Workspace.Remote.ItemHandler:InvokeServer(Workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP)
+		i
+	 if _G.guns == "All Non Gamepass" then
+		Workspace.Remote.ItemHandler:InvokeServer(Workspace.Prison_ITEMS.giver["AK-47"].ITEMPICKUP)
+		Workspace.Remote.ItemHandler:InvokeServer(Workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP)
+		Workspace.Remote.ItemHandler:InvokeServer(Workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP)
+		end
+	end
+})
+
+
+
+
