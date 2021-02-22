@@ -11,7 +11,7 @@ end
 
 if nouniversal==false then
 warn("game not loaded, club dj or unifps")
-ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ElseLoader(nogm)")
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ErrorLoaderIfNoGame")
 -- Im making my own universal FPS script soon, using oh's esp lib. -- 
 end
  --saving this just incase
@@ -27,7 +27,7 @@ end
 
 end
 if nouniversal==false then
-ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ElseLoader(nogm)")
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ErrorLoaderIfNoGame")
 -- Im making my own universal FPS script soon, using oh's esp lib. -- 
 end
 also saving this above /\
@@ -41,12 +41,11 @@ nouniversal=true
 
 if game.PlaceId==4958040666 then
 ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/SCLoader")
-end
 
 
 if nouniversal==false then
 warn("game not loaded, club dj or unifps")
-ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ElseLoader(nogm)")
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ErrorLoaderIfNoGame")
 -- Im making my own universal FPS script soon, using oh's esp lib. -- 
 end
 --]] --saving this just incase
@@ -58,11 +57,13 @@ end
 
 
 if game.PlaceId==4958040666 then
-ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/SCLoader")
-else if game.PlaceId~=4958040666 then
-ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ElseLoader(nogm)")
--- Im making my own universal FPS script soon, using oh's esp lib. -- 
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/SewerCity")
 end
+if game.PlaceId==2788229376 then
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/SCLoader")
+end
+else if game.PlaceId~=4958040666 then
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ErrorLoaderIfNoGame)")
 end
 
 
