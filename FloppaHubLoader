@@ -11,6 +11,6 @@ ________ ___       ________  ________  ________  ________          ___  ___  ___
     ! IT IS RECCOMENDED YOU USE THE AUTO-LOADER, INSTEAD OF COPYING EACH SCRIPT.
 --]]
 
- loadstring(game:HttpGet("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/gmdetection",true))()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/KeySystem",true))()
 
 
