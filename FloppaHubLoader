@@ -6,9 +6,7 @@ ________ ___       ________  ________  ________  ________          ___  ___  ___
   \ \  \_| \ \  \____\ \  \\\  \ \  \___|\ \  \___|\ \  \ \  \       \ \  \ \  \ \  \\\  \ \  \|\  \ 
    \ \__\   \ \_______\ \_______\ \__\    \ \__\    \ \__\ \__\       \ \__\ \__\ \_______\ \_______\
     \|__|    \|_______|\|_______|\|__|     \|__|     \|__|\|__|        \|__|\|__|\|_______|\|_______|
-    Do not dump constants, or try to de-obfuscate anthing, or be blacklisted. 
-    (Scripts obfuscated in AztupBrew, and in PSU.)
-    ! IT IS RECCOMENDED YOU USE THE AUTO-LOADER, INSTEAD OF COPYING EACH SCRIPT.
+    trolololo cheesy ascii art!!!!!1!!!11!! xdddd
 --]]
 
  loadstring(game:HttpGet("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/KeySystem",true))()
