@@ -60,10 +60,13 @@ if game.PlaceId==4958040666 then
 ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/SewerCity")
 end
 if game.PlaceId==2788229376 then
-ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/SCLoader")
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/DaHood")
 end
-else if game.PlaceId~=4958040666 then
-ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ErrorLoaderIfNoGame)")
+if game.PlaceId==155615604 then
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/PrisonLife")
+end
+if game.PlaceId~=4958040666 and game.PlaceId~=788229376 and game.PlaceId ~=155615604 then
+ld("https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/ErrorLoaderIfNoGame")
 end
 
 
