@@ -1,0 +1,245 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local NoGame = Instance.new("ScreenGui")
+local Gradient = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local SAK = Instance.new("TextButton")
+local Shadow = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local OwlHub = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Shadow_2 = Instance.new("Frame")
+local ClubDJ = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local Shadow_3 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local discord = Instance.new("TextButton")
+local popup = Instance.new("TextLabel")
+
+--Properties:
+
+NoGame.Name = "NoGame"
+NoGame.Parent = game.CoreGui
+NoGame.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Gradient.Name = "Gradient"
+Gradient.Parent = NoGame
+Gradient.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gradient.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Gradient.BorderSizePixel = 0
+Gradient.Position = UDim2.new(0.339959234, 0, 0.336906582, 0)
+Gradient.Size = UDim2.new(0, 438, 0, 232)
+Gradient.Draggable = true
+Gradient.Active = true
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(102, 45, 113)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(197, 66, 110))}
+UIGradient.Parent = Gradient
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = Gradient
+
+SAK.Name = "SAK"
+SAK.Parent = Gradient
+SAK.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+SAK.BorderSizePixel = 0
+SAK.Position = UDim2.new(0.0388127863, 0, 0.637931049, 0)
+SAK.Size = UDim2.new(0, 134, 0, 48)
+SAK.ZIndex = 2
+SAK.Font = Enum.Font.GothamSemibold
+SAK.Text = ""
+SAK.TextColor3 = Color3.fromRGB(255, 255, 255)
+SAK.TextScaled = true
+SAK.TextSize = 14.000
+SAK.TextWrapped = true
+SAK.MouseButton1Down:connect(function()
+	game.CoreGui.NoGame:Destroy()
+end)
+
+
+Shadow.Name = "Shadow"
+Shadow.Parent = SAK
+Shadow.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow.BorderSizePixel = 0
+Shadow.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel.Parent = SAK
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, 0, 0.509433985, 0)
+TextLabel.Size = UDim2.new(1.03814268, -20, 0.943396211, -20)
+TextLabel.ZIndex = 2
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "Survive and Kill the Killers"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+OwlHub.Name = "OwlHub"
+OwlHub.Parent = Gradient
+OwlHub.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+OwlHub.BorderSizePixel = 0
+OwlHub.Position = UDim2.new(0.680365324, 0, 0.637931049, 0)
+OwlHub.Size = UDim2.new(0, 119, 0, 48)
+OwlHub.ZIndex = 2
+OwlHub.Font = Enum.Font.GothamSemibold
+OwlHub.Text = ""
+OwlHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+OwlHub.TextScaled = true
+OwlHub.TextSize = 14.000
+OwlHub.TextWrapped = true
+OwlHub.MouseButton1Down:connect(function()
+	game.CoreGui.NoGame:Destroy()
+end)
+
+TextLabel_2.Parent = OwlHub
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.496062428, 0, 0.50943327, 0)
+TextLabel_2.Size = UDim2.new(1.05763102, -20, 1.00780845, -20)
+TextLabel_2.ZIndex = 2
+TextLabel_2.Font = Enum.Font.GothamSemibold
+TextLabel_2.Text = "Owl Hub Universal"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Shadow_2.Name = "Shadow"
+Shadow_2.Parent = OwlHub
+Shadow_2.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_2.BorderSizePixel = 0
+Shadow_2.Size = UDim2.new(1, 0, 1, 4)
+
+ClubDJ.Name = "ClubDJ"
+ClubDJ.Parent = Gradient
+ClubDJ.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
+ClubDJ.BorderSizePixel = 0
+ClubDJ.Position = UDim2.new(0.358447492, 0, 0.637931049, 0)
+ClubDJ.Size = UDim2.new(0, 132, 0, 48)
+ClubDJ.ZIndex = 2
+ClubDJ.Font = Enum.Font.GothamSemibold
+ClubDJ.Text = ""
+ClubDJ.TextColor3 = Color3.fromRGB(255, 255, 255)
+ClubDJ.TextScaled = true
+ClubDJ.TextSize = 14.000
+ClubDJ.TextWrapped = true
+ClubDJ.MouseButton1Down:connect(function()
+	game.CoreGui.NoGame:Destroy()
+end)
+
+
+TextLabel_3.Parent = ClubDJ
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.5, 0, 0.509433985, 0)
+TextLabel_3.Size = UDim2.new(1.03814268, -20, 0.943396211, -20)
+TextLabel_3.ZIndex = 2
+TextLabel_3.Font = Enum.Font.GothamSemibold
+TextLabel_3.Text = "Club DJ"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+Shadow_3.Name = "Shadow"
+Shadow_3.Parent = ClubDJ
+Shadow_3.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Shadow_3.BorderSizePixel = 0
+Shadow_3.Size = UDim2.new(1, 0, 1, 4)
+
+TextLabel_4.Parent = Gradient
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.ClipsDescendants = true
+TextLabel_4.Position = UDim2.new(0, 0, 0.112068966, 0)
+TextLabel_4.Size = UDim2.new(0, 442, 0, 113)
+TextLabel_4.Font = Enum.Font.Ubuntu
+TextLabel_4.Text = "Oops! No game was detected. Reasons: 1. You're in Club DJ, SAKTK, or aren't in our supported games. Please choose a option below."
+TextLabel_4.TextColor3 = Color3.fromRGB(199, 218, 209)
+TextLabel_4.TextSize = 28.000
+TextLabel_4.TextWrapped = true
+
+close.Name = "close"
+close.Parent = Gradient
+close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+close.BackgroundTransparency = 1.000
+close.Position = UDim2.new(0.917808235, 0, -0.0344827585, 0)
+close.Size = UDim2.new(0, 40, 0, 46)
+close.Font = Enum.Font.SciFi
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextSize = 40.000
+--[[close.MouseButton1Down:Connect(function()
+	game.CoreGui.NoGame:Destroy()
+end)
+--]]
+popup.Name = "popup"
+popup.Parent = Gradient
+popup.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+popup.ClipsDescendants = true
+popup.Position = UDim2.new(0.196347028, 0, 1, 0)
+popup.Size = UDim2.new(0, 272, 0, 0)
+popup.Font = Enum.Font.SourceSans
+popup.Text = "Discord Copied to Clipboard!"
+popup.TextColor3 = Color3.fromRGB(170, 0, 255)
+popup.TextSize = 25.000
+popup.TextWrapped = true
+popup.ClipsDescendants = true
+
+discord.Name = "discord"
+discord.Parent = Gradient
+discord.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+discord.BackgroundTransparency = 1.000
+discord.BorderColor3 = Color3.fromRGB(0, 0, 0)
+discord.Size = UDim2.new(0, 181, 0, 26)
+discord.Font = Enum.Font.SourceSans
+discord.Text = "Need Help? Click Me!"
+discord.TextColor3 = Color3.fromRGB(0, 0, 0)
+discord.TextSize = 25.000
+--[[discord.MouseButton1Down:Connect(function()
+	NoGame.Gradient.popup:TweenSize(UDim2.new({0.196, 0},{1, 0}), "Out", "Quart", 1)
+	wait(4)
+	NoGame.Gradient.popup:TweenSize(UDim2.new({0, 251},{0, 0}), "Out", "Quart", 1)
+end)
+
+--]]
+
+-- Scripts:
+
+local function TRZEGNE_fake_script() -- close.destroygui 
+	local script = Instance.new('LocalScript', close)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.CoreGui.NoGame:Destroy()
+	end)
+
+end
+coroutine.wrap(TRZEGNE_fake_script)()
+local function HPKOPIB_fake_script() -- discord.LocalScript 
+	local script = Instance.new('LocalScript', discord)
+
+	script.Parent.MouseButton1Down:connect(function()
+		setclipboard("ass")
+		NoGame.Gradient.popup:TweenSize(UDim2.new(0, 272,0, 54), "Out", "Quart", 1)
+		wait(2)
+		NoGame.Gradient.popup:TweenSize(UDim2.new(0, 272,0, 0), "In", "Quart", 1)
+	end)
+
+end
+coroutine.wrap(HPKOPIB_fake_script)()
+--]]
