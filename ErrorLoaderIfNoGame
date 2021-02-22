@@ -57,7 +57,7 @@ SAK.TextScaled = true
 SAK.TextSize = 14.000
 SAK.TextWrapped = true
 SAK.MouseButton1Down:connect(function()
-	game.CoreGui.NoGame:Destroy()
+	loadstring(game:HttpGet(https://raw.githubusercontent.com/technorav3nn/FHubLoader/main/SurviveAndKill,true))()
 end)
 
 
@@ -97,7 +97,7 @@ OwlHub.TextScaled = true
 OwlHub.TextSize = 14.000
 OwlHub.TextWrapped = true
 OwlHub.MouseButton1Down:connect(function()
-	game.CoreGui.NoGame:Destroy()
+	loadstring(game:HttpGet(https://raw.githubusercontent.com/SiLeNSwOrD/OwlHub/master/OwlHub.txt,true))()
 end)
 
 TextLabel_2.Parent = OwlHub
@@ -136,7 +136,7 @@ ClubDJ.TextScaled = true
 ClubDJ.TextSize = 14.000
 ClubDJ.TextWrapped = true
 ClubDJ.MouseButton1Down:connect(function()
-	game.CoreGui.NoGame:Destroy()
+	loadstring(game:HttpGet(https://github.com/technorav3nn/FHubLoader/blob/main/ClubDJLoader,true))()
 end)
 
 
